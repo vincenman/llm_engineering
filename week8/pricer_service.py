@@ -15,7 +15,8 @@ secrets = [modal.Secret.from_name("huggingface-secret")]
 # Constants
 
 GPU = "T4"
-BASE_MODEL = "meta-llama/Llama-3.2-3B"
+#BASE_MODEL = "meta-llama/Llama-3.2-3B"
+BASE_MODEL = "google/gemma-3-4b-it"
 PROJECT_NAME = "price"
 HF_USER = "ed-donner"  # your HF name here! Or use mine if you just want to reproduce my results.
 RUN_NAME = "2025-11-28_18.47.07"

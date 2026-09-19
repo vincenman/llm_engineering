@@ -7,7 +7,9 @@ app = modal.App("llama")
 image = Image.debian_slim().pip_install("torch", "transformers", "accelerate")
 secrets = [modal.Secret.from_name("huggingface-secret")]
 GPU = "T4"
-MODEL_NAME = "meta-llama/Llama-3.2-3B"
+
+MODEL_NAME = "google/gemma-2b"  
+#ODEL_NAME = "meta-llama/Llama-3.2-3B"
 
 
 @app.function(image=image, secrets=secrets, gpu=GPU, timeout=1800)
